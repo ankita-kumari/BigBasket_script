@@ -1,7 +1,11 @@
+import sys
 from BigBasket import add
+
 def add_to_list():
-	item = raw_input()
-	add(item)
+	item = sys.argv[1:]
+	print item
+	for i in item:
+		add(i)
 	return
 
 if __name__ == '__main__':
